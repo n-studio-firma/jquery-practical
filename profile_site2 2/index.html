@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Plofile site</title>
+  <meta name="description" content="〇〇のプロフィールサイトです">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- slickの読み込み -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+
+<body>
+  <!-- 以下、ヘッダー -->
+  <header>
+    <a class="myprofile-hover" href="index.html">
+      <h1>MyProfile</h1>
+    </a>
+    <nav id="navi">
+      <a class="about-hover" href="#about">About</a>
+      <a class="works-hover" href="#works">Works</a>
+    </nav>
+  </header>
+  <!-- 以下、メイン -->
+  <main>
+    <!-- メインビジュアル -->
+    <section id="carousel-section">
+      <div class="carousel">
+        <div>
+          <img class="carouselImg" src="images/main.png" alt="カメラの写真">
+        </div>
+        <div>
+          <img class="carouselImg" src="images/main2.png" alt="ガジェットの集合写真">
+        </div>
+        <div>
+          <img class="carouselImg" src="images/main3.png" alt="一眼レフと夕日">
+        </div>
+      </div>
+    </section>
+    <!-- topへ戻るボタン -->
+    <a id="back-btn" href="#">TOP</a>
+
+    <!-- about me -->
+    <section id="about" class="section">
+      <h2 class="main-content">About</h2>
+      <div id="profile-div">
+        <img id="profile-img" src="images/about.png" alt="プロフィール写真">
+        <div id="profile-details">
+          <h3>Kazuki Asahina</h3>
+          <ul id="about-me">
+            <li>25歳 長野県佐久市出身</li>
+            <li>ソフトウェア業界でマーケティングに従事</li>
+            <li>趣味はカメラ、愛機はCanon</li>
+            <li>自然を撮影するのが好きで、海や山によく行く</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- works -->
+    <section id="works" class="section">
+      <h2 class="main-content">Works</h2>
+      <div id="works-img" class="works-img">
+        <div class="img">
+          <a class="firstimg-hover">
+            <img src="images/works1.png" alt="海の写真">
+            <p>新潟に訪れた際に、日本の雄大さに魅了されて撮影した1枚</p>
+          </a>
+        </div>
+
+
+        <div class="img">
+          <a class="secondimg-hover">
+            <img src="images/works2.png" alt="山の写真">
+            <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+          </a>
+        </div>
+
+        <div class="img">
+          <a class="thirdimg-hover">
+            <img src="images/works3.png" alt="街の写真">
+            <p>京都で撮影した、明け方の古き良き日本の街並み</p>
+          </a>
+        </div>
+
+        <!-- モーダル -->
+        <div class="modal">
+          <a class="modalimg">
+            <img src="">
+          </a>
+          <span class="close-btn"> <a href="">✖</a></span>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <!-- 以下、フッター -->
+  <footer>
+    <p id="copy-rights">&copy; MyProfile. All rights reserved. </p>
+  </footer>
+  <!-- jqueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- slickの読み込み -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
