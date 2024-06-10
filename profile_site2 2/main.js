@@ -120,7 +120,7 @@ $(function () {
 
   // Worksの画像をクリックしたときにモーダルで拡大表示する
   $(".img a").click(function () {
-    const modalSrc = $(".img a").children().attr("src");
+    const modalSrc = $(this).children().attr("src");
     $(".modalimg").children().attr("src", modalSrc);
     $(".modal").fadeIn();
     $("body, html").css("overflow-y", "hidden");
